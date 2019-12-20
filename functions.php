@@ -6,7 +6,7 @@
 
 $themename = "Vander Web Child";
 $shortname = "vanderweb-child";
-$version = '1.0.0';
+$version = '1.0.1';
 
 function vanderwebchild_responsivcss (){
     wp_deregister_style( 'stylesheet', get_stylesheet_directory_uri().'/style.css', array() );    
