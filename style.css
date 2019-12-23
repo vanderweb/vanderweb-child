@@ -5,7 +5,7 @@ Author: Ulrik Vander
 Author URI: http://vander-web.com
 Description: Vander Web Child Theme.
 Template: vanderweb
-Version: 1.0.1
+Version: 1.0.2
 */
 
 /* =Theme customization starts here
@@ -112,10 +112,19 @@ a:hover {
 /* PHONEMENU */
 
 
+/* HERO SECTION */
+
+
 /* SLIDER */
 
 
-/* SECTION 1 */
+/* SECTION ABOVE 1 */
+
+
+/* SECTION ABOVE 2 */
+
+
+/* SECTION ABOVE 3 */
 
 
 /* CONTENT PAGE */
@@ -148,7 +157,13 @@ a:hover {
 /* RIGHT SIDEBAR */
 
 
-/* SECTION 2 */
+/* SECTION BELOW 1 */
+
+
+/* SECTION BELOW 2 */
+
+
+/* SECTION BELOW 3 */
 
 
 /* FOOTER */
