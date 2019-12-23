@@ -51,6 +51,18 @@ function vanderwebchild_woocommerce_support() {
 //add_action( 'after_setup_theme', 'vanderwebchild_woocommerce_support' );
 
 ////////////////////////////////////////////////////////////////////
+// Code for Action Hook. Custom ACF Widget
+////////////////////////////////////////////////////////////////////
+function vanderwebchild_widget_acf($widget_id) {
+  // Custom Code here - Start
+  
+  //$field get_field('some-acf-field', $widget_id);
+  
+  // Custom Code here - End
+}
+//add_action('vander_custom_acf_contenthook', 'vanderwebchild_widget_acf', 10, 1);
+
+////////////////////////////////////////////////////////////////////
 // Functions
 ////////////////////////////////////////////////////////////////////
 
