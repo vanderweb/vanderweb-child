@@ -70,13 +70,24 @@ function product_subcategories( $args = array() ) {
 }
 add_action( 'woocommerce_before_shop_loop', 'product_subcategories', 50 );
 
-add_theme_support( 'wc-product-gallery-zoom' );
-add_theme_support( 'wc-product-gallery-lightbox' );
-add_theme_support( 'wc-product-gallery-slider' );
+function vander_woo_setup() {
+ //add_theme_support( 'wc-product-gallery-zoom' );
+ //add_theme_support( 'wc-product-gallery-lightbox' );
+ add_theme_support( 'wc-product-gallery-slider' );
+}
+add_action( 'after_setup_theme', 'vander_woo_setup' );
 
 function custom_proddetails_start() {
-    echo '<div class="prod-details-row row">';
-    echo '<div class="prod-details-left col-12 col-sm-6">';
+	echo '<div class="prod-details-row row">';
+	echo '<div class="prod-details-left col-12 col-sm-6">';
+	?>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	 jQuery( ".woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a" ).addClass( "fancybox" );
+	 jQuery( ".woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a" ).attr('rel','lightframe-<?php echo get_the_id(); ?>');
+	});
+	</script>
+	<?php
 }
 add_action( 'woocommerce_before_single_product_summary' , 'custom_proddetails_start', 12 );
 function custom_proddetails_middle() {
